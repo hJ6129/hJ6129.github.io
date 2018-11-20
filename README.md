@@ -1,4 +1,8 @@
 # hJ6129.github.io
 github test
 test
-동해물과 백두산이 마르도 닳도록 하느님이 보우핫 ㅏ우리나라만세 무구오하 삼천리 화려강산 대한사람 대한으로 길이 ㅗ벚ㄴ하세
+
+git add file_name;
+git add *
+git commit -m "text
+git push origin master
