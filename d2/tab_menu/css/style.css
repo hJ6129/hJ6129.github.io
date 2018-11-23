@@ -11,4 +11,4 @@ a{color:#000; text-decoration:none;}
 
 #tab_menu>.focus{height:28px; background:#315593; line-height:28px;}
 .select::before{content:""; position:absolute; top:57px; width:541px; height:1px; border-bottom:1px solid #315593;}
-#tab_menu li .menu_on{display:block;}
+#tab_menu>li.focus>ul{display:block;}
