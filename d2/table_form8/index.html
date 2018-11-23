@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table_form8</title>
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+</head>
+<body>
+	<div id="wrap">
+		<h1>Legend</h1>
+		<table>
+			<tr>
+				<td>인풋: 설명 숨기고 줄 바꿈 없는</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>인풋: 설명 숨기고 줄 바꿈</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>인풋: 설명 보이고 줄 바꿈 없는</td>
+				<td><input type="text">숨겨두지 않은 설명 입니다. 줄 바꿈 없습니다.</td>
+			</tr>
+			<tr>
+				<td>인풋: 설명 보이고 줄 바꿈</td>
+				<td>
+					<input type="text"><br/>
+					숨겨두지 않은 설명 입니다. 줄 바꿈 했습니다.
+				</td>
+			</tr>
+			<tr>
+				<td>인풋: 줄 바꿈 없는 인풋</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>인풋: 줄 바꿈</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>인풋: 레이블 클리어</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>멀티라인 인풋</td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td>멀티라인 인풋: 레이블 클리어</td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td>셀렉트: 단일 선택</td>
+				<td>
+					<select>
+						<option value="1">옵션 하나</option>
+						<option value="2">옵션 둘</option>
+						<option value="3">옵션 셋</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>셀렉트: 복수 선택</td>
+				<td>
+					<select multiple="multiple">
+						<option value="1">옵션 하나</option>
+						<option value="2">옵션 둘</option>
+						<option value="3">옵션 셋</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>체크박스 인풋: 줄 바꿈 없는</td>
+				<td>
+					<input type="checkbox" id="ch_no_l1">
+					<label for="ch_no_l1">레이블</label>
+					<input type="checkbox" id="ch_no_l2">
+					<label for="ch_no_l2">레이블</label>
+				</td>
+			</tr>
+			<tr>
+				<td>체크박스 인풋: 줄 바꿈 있는</td>
+				<td>
+					<input type="checkbox" id="ch_l1">
+					<label for="ch_l1">레이블</label><br/>
+					<input type="checkbox" id="ch_l2">
+					<label for="ch_l2">레이블</label>
+				</td>
+			</tr>
+			<tr>
+				<td>라디오 인풋: 줄 바꿈 없는</td>
+				<td>
+					<input type="radio" name="radio1" id="ra_no_l1">
+					<label for="ra_no_l1">레이블</label>
+					<input type="radio" name="radio1" id="ra_no_l2">
+					<label for="ra_no_l2">레이블</label>
+				</td>
+			</tr>
+			<tr>
+				<td>라디오 인풋: 줄 바꿈 있는</td>
+				<td>
+					<input type="radio" name="radio2" id="ra_l1">
+					<label for="ra_l1">레이블</label><br/>
+					<input type="radio" name="radio2" id="ra_l2">
+					<label for="ra_l2">레이블</label>
+				</td>
+			</tr>
+			<tr>
+				<td>파일</td>
+				<td><input type="file"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
