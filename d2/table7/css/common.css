@@ -1,0 +1,13 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+#wrap{width:675px; height:535px; padding:20px 15px;}
+
+#rank_table{width:640px; height:205px; margin-bottom:30px; border-top:2px solid #e5e5e5; border-bottom:2px solid #e5e5e5; border-collapse:collapse; font-size:13px; text-align:center;}
+#rank_table>thead, #rank_table>tfoot{background:#f5f7f9;}
+#rank_table>thead>tr>td, #rank_table>tfoot>tr>td{height:27.5px; font-weight:bold;}
+#rank_table tr>td{border:1px solid #e5e5e5;}
+#rank_table>tbody>tr>td{height:25px;}
+#rank_table>tbody>tr>.ranking{font-weight:bold;}
+
+#prj_table{width:640px; height:267px; border-collapse:collapse; font-size:13px;}
+#prj_table tr>td{padding:10px; border-top:1px solid #dddee2; border-bottom:1px solid #dddee2;}
+#prj_table tr>.table_list_title{padding-left:20px; background:#f1f1f3; font-weight:bold; vertical-align:top;}
