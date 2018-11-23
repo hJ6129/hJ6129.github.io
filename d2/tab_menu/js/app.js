@@ -8,7 +8,6 @@ $(document).ready(function(){
 			$(this).siblings().find('ul').removeClass('menu_on');
 			if($(this).siblings().attr('class') != "focus" && $(this).attr('class') != "focus"){
 				$(this).parent().removeClass("select")
-				console.log("ASdf")
 			}
 		}
 
