@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     function close_all(){
         $("#faq_box>dl>dd>p").addClass("answer");
-        open_tag.css({"font-weight":"400"})
+        open_t.css({"font-weight":"400"})
     }
 
     open_tag.on("click", open);

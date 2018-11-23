@@ -2,12 +2,13 @@
 li{text-align:center; list-style:none;}
 a{color:#000; text-decoration:none;}
 
-#tab_menu{width:541px; height:64px; margin:30px 40px;}
+#tab_menu{width:541px; height:65px; margin:30px 40px;}
 #tab_menu>li{float:left; width:90px; height:27px; margin-right:1px; background:#4cb1e5; color:#fff; line-height:27px; cursor:pointer;}
 #tab_menu>li>ul{display:none; width:225px; height:37px; margin-left:-40px;}
-#tab_menu>li>ul>li{float:left; width:74px; height:14px; margin:14px 0; border-right:1px solid #ddd; color:#000; font-size:13px; line-height:14px;}
+#tab_menu>li>ul>li{display:block; float:left; width:74px; height:14px; margin:14px 0; border-right:1px solid #ddd; color:#000; font-size:13px; line-height:14px;}
 #tab_menu>li>ul>a{display:block;}
 #tab_menu>li>ul>.sub_li_last{border:none;}
 
-#tab_menu>.focus{background:#315593;}
+#tab_menu>.focus{height:28px; background:#315593; line-height:28px;}
+.select::before{content:""; position:absolute; top:57px; width:541px; height:1px; border-bottom:1px solid #315593;}
 #tab_menu li .menu_on{display:block;}
