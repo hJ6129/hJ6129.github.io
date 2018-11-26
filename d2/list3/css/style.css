@@ -32,8 +32,9 @@ a{color:#000; text-decoration:none;}
 #faq_box>dl>dt>h2{display:inline-block;}
 #faq_box>dl>dt>span{float:right; cursor:pointer;}
 #faq_box>dl>dd{width:100%; height:auto; border-top:1px solid #e6e6e6; font-size:14px;}
-#faq_box>dl>dd>strong{display:block; padding:14px; background:#fcfcfc; font-weight:normal; cursor:pointer;}
-#faq_box>dl>dd>p{margin:14px;}
-#faq_box>dl>dd>.answer{display:none;}
+#faq_box>dl>dd>strong{display:block; padding:14px; background:#fcfcfc; font-weight:bold; cursor:pointer;}
+#faq_box>dl>dd.answer strong{font-weight:normal;}
+#faq_box>dl>dd p{display:block;margin:14px;}
+#faq_box>dl>dd.answer p{display:none;}
 
 .focus{display:block;}

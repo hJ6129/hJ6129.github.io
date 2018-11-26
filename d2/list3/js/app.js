@@ -3,8 +3,9 @@ $(document).ready(function(){
     var close_tag = $("#all_close");
     
     function open(){
-        $(this).siblings("p").toggleClass("answer");
-        $(this).css("font-weight") == "700" ? $(this).css({"font-weight":"400"}) : $(this).css({"font-weight":"bold"});
+        //$(this).siblings("p").toggleClass("answer");
+        $(this).closest('dd').toggleClass('answer')
+        //$(this).css("font-weight") == "700" ? $(this).css({"font-weight":"400"}) : $(this).css({"font-weight":"bold"});
     }
 
     function close_all(){

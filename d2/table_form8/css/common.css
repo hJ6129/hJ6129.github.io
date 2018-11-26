@@ -1,2 +1,12 @@
 *{margin:0; padding:0; box-sizing:border-box;}
 #wrap{width:827px; height:812px; padding:0 10px;}
+#wrap>h1{display:inline-block; height:35px; font-size:15px; line-height:35px;}
+#wrap>table{width:799px; height:760px; border-top:2px solid #999; border-collapse:collapse;}
+#wrap>table>tbody>tr>td{padding:5px 10px; border-bottom:1px solid #ddd; font-size:13px;}
+#wrap>table>tbody>tr>.table_title{background:#fafafa; vertical-align:top;}
+#wrap>table>tbody>tr>td>textarea{width:327px; height:77px;}
+#wrap>table>tbody>tr>td>input[type=text]{width:136px; height:22px;}
+#wrap>table>tbody>tr>td>input.rable{width:310px;}
+
+#wrap>table>tbody>tr>.iplace::before{content:"레이블 텍스트를 인풋과 오버레이"; position:absolute; z-index:5; width:auto; height:auto; margin:2px; color:#8c8c8c;}
+#wrap>table>tbody>tr>.tplace::before{content:"레이블 텍스트를 멀티라인 인풋과 오버레이"; position:absolute; z-index:5; width:auto; height:auto; margin:2px; color:#8c8c8c;}
