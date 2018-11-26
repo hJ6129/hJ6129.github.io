@@ -18,6 +18,7 @@ $(document).ready(function(){
 
 	//ie일 경우에만
 	if ((navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+		$("input, textarea").removeAttr('placeholder');
 		$("#input_place").val() != "" ? remove_iplace() : iplace();
 		$("#textarea_place").val() != "" ? remove_tplace() : tplace();
 		function ikeydown(){
