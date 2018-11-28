@@ -3,8 +3,8 @@
 
 #rank_table{width:640px; height:205px; margin-bottom:30px; border-top:2px solid #e5e5e5; border-bottom:2px solid #e5e5e5; border-collapse:collapse; font-size:13px; text-align:center;}
 #rank_table>thead, #rank_table>tfoot{background:#f5f7f9;}
-#rank_table>thead>tr>td, #rank_table>tfoot>tr>td{height:27.5px; font-weight:bold;}
-#rank_table tr>td{border:1px solid #e5e5e5;}
+#rank_table>thead>tr>th, #rank_table>tfoot>tr>td{height:27.5px; font-weight:bold;}
+#rank_table tr>td,th{border:1px solid #e5e5e5;}
 #rank_table>tbody>tr>td{height:25px;}
 #rank_table>tbody>tr>.ranking{font-weight:bold;}
 
