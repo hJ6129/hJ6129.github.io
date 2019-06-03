@@ -1,8 +1,2 @@
 # hywlss9.github.io
-github test
-test
-
-git add file_name;
-git add *
-git commit -m "text
-git push origin master
+github에 올린 작업물 등을 올리거나 데모 페이지가 필요할때 
