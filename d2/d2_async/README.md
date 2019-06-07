@@ -21,6 +21,8 @@
     console.log('Hello Again');
   </code>
 </pre>
+Hello가 실행되고 3초 후 Bye가 실행된 후 Hello Again이 실행 된다고 생각 할 수 있지만
+실제로는 Hello가 실행된 후 Hello Again이 실행되고 3초 있다가 Bye가 실행된다.
 
 - - -
 ## 비동기 처리가 필요한 이유
