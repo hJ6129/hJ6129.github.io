@@ -16,6 +16,18 @@
 
 - - -
 
+## 1. async
+
+- - -
+
+## 2. await
+
+- - -
+
+## 3. promise
+
+- - -
+
 참고 사이트
 * https://chodragon9.github.io/blog/async-await-case/
 * https://chodragon9.github.io/blog/promise/
