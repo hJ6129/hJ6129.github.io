@@ -9,6 +9,19 @@
 정의한 코드가 완료되지 않아도 다음 코드를 실행하는 것
 > ex) ajax, setTimeout()
 
+<pre>
+  <code>
+    // #1
+    console.log('Hello');
+    // #2
+    setTimeout(function () {
+	    console.log('Bye');
+    }, 3000);
+    // #3
+    console.log('Hello Again');
+  </code>
+</pre>
+
 - - -
 ## 비동기 처리가 필요한 이유
 * 어느 한 코드를 실행하고 그 뒤에 따라오는 코드가 사용되기까지의 시간이 얼마나 걸릴지 모르기 때문에 사용한다.
