@@ -49,6 +49,7 @@ async 함수는 Promise를 반환합니다.
     	// then
     	const f = async () => 'Hi!'
 	f().then(console.log) // Hi!
+	
 	// catch
 	const f = async () => die;
 	f().catch(error => console.log('에러 발생!')) // 에러 발생!
