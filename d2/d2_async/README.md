@@ -42,6 +42,19 @@ async 함수는 Promise를 반환합니다.
     </code>
 </pre>
 
+정상적인 동작으로 값을 반환하면 then에서 받을 수 있고
+비정상적인 동작으로 에러가 발생하면 catch에서 받을 수 있다
+<pre>
+    <code>
+    	// then
+    	const f = async () => 'Hi!'
+	f().then(console.log) // Hi!
+	// catch
+	const f = async () => die;
+	f().catch(error => console.log('에러 발생!')) // 에러 발생!
+    </code>
+</pre>
+
 - - -
 
 ## 2. await
