@@ -34,6 +34,13 @@ Hello가 실행되고 3초 후 Bye가 실행된 후 Hello Again이 실행 된다
 - - -
 
 ## 1. async
+async 함수는 Promise를 반환합니다.
+<pre>
+    <code>
+       	const f = async () => {}
+	f() // Promise
+    </code>
+</pre>
 
 - - -
 
