@@ -56,6 +56,20 @@ async 함수는 Promise를 반환합니다.
     </code>
 </pre>
 
+### async 에서 promise 반환
+
+async 함수의 반환값으로 Promise를 사용하면 호출자에서는 async 함수 사용과 동일하게 사용된다.
+
+resolve 상태면 then으로 처리되고, reject 상태면 catch에서 처리된다.
+<pre>
+    <code>
+    	const f = async () => Promise.resolve('Hi!')
+	f().then(console.log) // Hi!
+	
+	const f = async () => Promise.reject('Hi!')
+	f().catch(error => console.log('에러 발생!')) // 에러 발생!
+    </code>
+</pre>
 - - -
 
 ## 2. await
