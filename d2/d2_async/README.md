@@ -81,14 +81,19 @@ await는 resolve 상태의 값은 좌항에 바인딩하고, reject 상태는 as
 <pre>
     <code>
     	async function f() {
-  	    const a = await delay(1000, 'a');
-  	    const b = await delay(2000, 'b');
+  	    const a = await 'a';
+  	    const b = await 'b';
   	    return `${a}${b}`;
 	}
 
 	f().then(console.log) // ab
     </code>
 </pre>
+
+>function 키워드 앞에 async만 붙여주면 되고 비동기로 처리되는 부분 앞에 await만 붙여주면 됩니다.
+
+다만, 몇 가지 주의할 점이 있다면 await 뒷부분이 반드시 promise 를 반환해야 한다는 것과 async function 자체도 promise 를 반환한다는 것입니다.
+
 
 - - -
 
