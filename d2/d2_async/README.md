@@ -107,7 +107,34 @@ Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기�
 * 거부 : 실패 상태, reject(), Promise.reject()
 
 이행상태는 then으로 처리할 수 있다. resolve를 통해 전달한 값이 then에 인자로 전달된다.
+
+<pre>
+    <code>
+    	Promise.resolve(10)
+  	    .then(result => console.log(result)) // 10
+    </code>
+</pre>
+
 거부상태는 catch으로 처리할 수 있다. reject를 통해 전달한 값이 catch에 인자로 전달된다.
+
+<pre>
+    <code>
+    	Promise.reject({code: 404})
+  	    .catch(({code}) => console.log(code)) // 404
+    </code>
+</pre>
+
+프로미스는 then을 호출해야 결과를 얻는 다. 필요할 때 then을 호출해서 데이터를 받는 것이다.
+
+<pre>
+    <code>
+    	let result;
+	const promise = new Promise(r => $.post(url1, data1, r));
+	promise.then(v => {
+    	    result = v;
+	});
+    </code>
+</pre>
 
 - - -
 
