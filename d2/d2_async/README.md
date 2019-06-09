@@ -74,6 +74,22 @@ resolve 상태면 then으로 처리되고, reject 상태면 catch에서 처리�
 
 ## 2. await
 
+Promise를 반환하는 코드를 다수 기술이 필요할 경우 await를 사용하면 읽기 쉽게 기술이 가능하다.
+
+await는 resolve 상태의 값은 좌항에 바인딩하고, reject 상태는 async의 catch로 전달된다.
+
+<pre>
+    <code>
+    	async function f() {
+  	    const a = await delay(1000, 'a');
+  	    const b = await delay(2000, 'b');
+  	    return `${a}${b}`;
+	}
+
+	f().then(console.log) // ab
+    </code>
+</pre>
+
 - - -
 
 ## 3. promise
