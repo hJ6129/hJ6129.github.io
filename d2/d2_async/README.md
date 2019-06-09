@@ -91,7 +91,7 @@ await는 resolve 상태의 값은 좌항에 바인딩하고, reject 상태는 as
     </code>
 </pre>
 
-> function 키워드 앞에 async만 붙여주면 되고 비동기로 처리되는 부분 앞에 await만 붙여주면 됩니다.
+> function 키워드 앞에 async만 붙여주면 되고 비동기로 처리되는 부분 앞에 await만 붙여주면 된다.
 
 > 다만, 몇 가지 주의할 점이 있다면 await 뒷부분이 반드시 promise 를 반환해야 한다는 것과 async function 자체도 promise 를 반환한다는 것입니다.
 
@@ -99,6 +99,15 @@ await는 resolve 상태의 값은 좌항에 바인딩하고, reject 상태는 as
 - - -
 
 ## 3. promise
+
+Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기에서 이행/거부로만 변경이 가능하다.
+
+* 대기 : 초기상태
+* 이행 : 성공 상태, resolve(), Promise.resolve()
+* 거부 : 실패 상태, reject(), Promise.reject()
+
+이행상태는 then으로 처리할 수 있다. resolve를 통해 전달한 값이 then에 인자로 전달된다.
+거부상태는 catch으로 처리할 수 있다. reject를 통해 전달한 값이 catch에 인자로 전달된다.
 
 - - -
 
