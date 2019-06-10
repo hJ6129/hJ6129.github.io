@@ -143,8 +143,9 @@ await는 resolve 상태의 값은 좌항에 바인딩하고, reject 상태는 as
 - - -
 
 ## 4. promise
+promise는 자바스크립트 비동기 처리에 사용되는 객체입니다.
 
-Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기에서 이행/거부로만 변경이 가능하다.
+promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기에서 이행/거부로만 변경이 가능하다.
 
 * 대기 : 초기상태
 * 이행 : 성공 상태, resolve(), Promise.resolve()
@@ -168,7 +169,7 @@ Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기�
     </code>
 </pre>
 
-프로미스는 then을 호출해야 결과를 얻는다. 필요할 때 then을 호출해서 데이터를 받는 것이다.
+promise는 then을 호출해야 결과를 얻는다. 필요할 때 then을 호출해서 데이터를 받는 것이다.
 
 <pre>
     <code>
@@ -180,12 +181,16 @@ Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기�
     </code>
 </pre>
 
+실무에서 있을 법한 promise 예제
+> https://joshua1988.github.io/web-development/javascript/promise-for-beginners/#%EC%8B%A4%EB%AC%B4%EC%97%90%EC%84%9C-%EC%9E%88%EC%9D%84-%EB%B2%95%ED%95%9C-%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4-%EC%97%B0%EA%B2%B0-%EC%82%AC%EB%A1%80
+
 - - -
 
 참고 사이트
 * https://chodragon9.github.io/blog/async-await-case/
 * https://chodragon9.github.io/blog/promise/
 * https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
+* https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
 * https://blueshw.github.io/2018/02/27/async-await/
 * https://medium.com/@shlee1353/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EB%8F%99%EA%B8%B0-async-await-promise-ae659eb1cb7e
 
