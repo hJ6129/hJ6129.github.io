@@ -1,7 +1,8 @@
 # 자바스크립트 비동기 프로그래밍
-1. async
-2. await
-3. promise
+1. callback
+2. async
+3. await
+4. promise
 
 - - -
 
@@ -37,7 +38,47 @@ Hello가 실행되고 3초 후 Bye가 실행된 후 Hello Again이 실행 된다
 
 - - -
 
-## 1. async
+## 1. callback
+
+callback 함수란 호출하는 함수(calling function)가 호출되는 함수(called 함수)로 전달하는 함수를 말하며 이때 callback 함수의 제어권은 호출되는 함수에게 있습니다.
+
+<pre>
+    <code>
+        // 각 함수는 비동기로 처리되는 로직이라 가정합니다
+	function goWork(time1, timeStartWork) {
+  	    wakeUp(time1, function (time2) {
+  		tired();
+  	    }
+	}
+    </code>
+</pre>
+
+goWork() 안에서 wakeUp()을 호출하는것 처럼 사용된다.
+
+<pre>
+    <code>
+        // 각 함수는 비동기로 처리되는 로직이라 가정합니다
+	function goWork(time1, timeStartWork) {
+  	    wakeUp(time1, function (time2) {
+  		takeSubway(time2, function(time3) {
+      		    takeOffSubway(time3, function(time4) {
+        		arriveWork(time4, function(arrivalTime) {
+          		    if (arrivalTime > timeStartWork) {
+            			fire();
+          		    }
+        		}
+      		    }
+    	    	}
+  	    }
+	}
+    </code>
+</pre>
+
+하지만 위 상황처럼 많은 
+
+- - -
+
+## 2. async
 async 함수는 Promise를 반환합니다.
 <pre>
     <code>
@@ -76,7 +117,7 @@ resolve 상태면 then으로 처리되고, reject 상태면 catch에서 처리�
 </pre>
 - - -
 
-## 2. await
+## 3. await
 
 Promise를 반환하는 코드를 다수 기술이 필요할 경우 await를 사용하면 읽기 쉽게 기술이 가능하다.
 
@@ -101,7 +142,7 @@ await는 resolve 상태의 값은 좌항에 바인딩하고, reject 상태는 as
 
 - - -
 
-## 3. promise
+## 4. promise
 
 Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기에서 이행/거부로만 변경이 가능하다.
 
