@@ -186,5 +186,6 @@ Promise의 상태는 대기, 이행, 거부 상태가 있다. 상태는 대기�
 * https://chodragon9.github.io/blog/async-await-case/
 * https://chodragon9.github.io/blog/promise/
 * https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
+* https://blueshw.github.io/2018/02/27/async-await/
 * https://medium.com/@shlee1353/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%EB%8F%99%EA%B8%B0-async-await-promise-ae659eb1cb7e
 
